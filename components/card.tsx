@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export default function Card({cardHeading, cardDetails}){
+type Props = {
+    cardHeading: string,
+    cardDetails: string
+}
+
+export default function Card({cardHeading, cardDetails}: Props){
     return (
         <>
         
