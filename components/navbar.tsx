@@ -1,8 +1,11 @@
 
+import { verifyAuth } from "@/lib/lucia-auth";
 import Link from "next/link";
 
 export default function Navbar(){
+   
     return (
+<<<<<<< HEAD
         <>       
 
 {/* <nav className="bg-white border-gray-200 dark:bg-gray-900">
@@ -46,6 +49,16 @@ export default function Navbar(){
 </div>
 </div>
 
+=======
+        <> 
+        <div className="flex m-2 p-2 justify-between">
+         <Link href={"/"}><h1 className="px-4 text-2xl font-extrabold">GST Solution</h1></Link> 
+         <div>
+         <Link href={"/signup"} className="px-2">Sign up</Link>
+         <Link href={"/login"} className="px-2">Login</Link>     
+        </div>
+        </div>   
+>>>>>>> 74b6025558f2dd4ca3c475771c7e056001eb17a1
         </>
     )
 }
