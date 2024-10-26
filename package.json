@@ -9,12 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-=======
     "@lucia-auth/adapter-postgresql": "^3.1.2",
     "cloudinary": "^2.5.1",
     "lucia": "^3.2.2",
->>>>>>> 74b6025558f2dd4ca3c475771c7e056001eb17a1
     "next": "15.0.0",
     "postgres": "^3.4.4",
     "react": "19.0.0-rc-65a56d0e-20241020",

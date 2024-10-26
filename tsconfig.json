@@ -22,10 +22,6 @@
       "@/*": ["./*"]
     }
   },
-<<<<<<< HEAD
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/actions.js", "db.js", "lib/sql-actions.js"],
-=======
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/auth.js", "lib/lucia-auth.js"],
->>>>>>> 74b6025558f2dd4ca3c475771c7e056001eb17a1
   "exclude": ["node_modules"]
 }
