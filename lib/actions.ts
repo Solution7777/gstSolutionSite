@@ -1,6 +1,6 @@
 'use server'
 
-import { uploadImage } from "./cloudinaray"
+import { uploadImage } from "./cloudinaray";
 
 export async function uploadDocuments(preVState:any, formData: FormData){
     const image = formData.get('image')
@@ -10,7 +10,6 @@ try{
 }catch (error){
     throw new Error('Image upload failed. Try again')
 }
-console.log(imageUrl)
 return {
     url: imageUrl
 }
