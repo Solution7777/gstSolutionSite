@@ -1,10 +1,17 @@
 'use server'
 
-import { getUsers } from "./db-actions"
+import { uploadImage } from "./cloudinaray"
 
-export default async function getAllUsers(){
-   const data = await getUsers();
-
-   console.log(data)
-
+export async function uploadDocuments(preVState:any, formData: FormData){
+    const image = formData.get('image')
+    let imageUrl
+try{
+    imageUrl = await uploadImage(image)
+}catch (error){
+    throw new Error('Image upload failed. Try again')
+}
+console.log(imageUrl)
+return {
+    url: imageUrl
+}
 }
