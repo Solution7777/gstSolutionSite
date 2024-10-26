@@ -1,5 +1,5 @@
 
-import { verifyAuth } from "@/lib/lucia-auth";
+
 import Link from "next/link";
 
 export default function Navbar(){
