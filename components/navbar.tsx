@@ -5,7 +5,7 @@ export default function Navbar(){
     return (
         <>       
 
-<nav className="bg-white border-gray-200 dark:bg-gray-900">
+{/* <nav className="bg-white border-gray-200 dark:bg-gray-900">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
         
@@ -37,7 +37,14 @@ export default function Navbar(){
       </ul>
     </div>
   </div>
-</nav>
+</nav> */}
+<div className="flex justify-between m-4">
+<Link href={"/"}><h1 className="text-2xl font-extrabold bg-gradient-to-r from-orange-500 via-yellow-500 to-green-500 bg-clip-text text-transparent">GST Solution</h1></Link>
+<div>
+<Link href={"/register"} className="p-2" >Register</Link>
+<Link href={"/login"} className="p-2" >Login</Link>
+</div>
+</div>
 
         </>
     )
