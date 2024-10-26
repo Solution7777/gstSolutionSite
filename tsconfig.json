@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/auth.js", "lib/lucia-auth.js", "lib/actions.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "lib/auth.js", "lib/lucia-auth.js", "lib/actions.js", "app/upload-documents/page.jsx", "app/login/page.jsx", "lib/cloudinaray.js"],
   "exclude": ["node_modules"]
 }

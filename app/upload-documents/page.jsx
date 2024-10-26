@@ -5,7 +5,7 @@ import { useActionState } from "react"
 import Image from "next/image"
 
 export default function DocumentUploadPage(){
-    const [formState, formAction] = useActionState<any, FormData>(uploadDocuments, {})
+    const [formState, formAction] = useActionState(uploadDocuments, {})
     
     return (
         <>

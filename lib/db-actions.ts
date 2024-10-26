@@ -1,7 +1,7 @@
 import sql from '@/db';
 
 
-export async function storeUser(fName:any, lName:any, email:any, phone:any, address:any, password:any){
+export async function storeUser(fName:string, lName:string, email:string, phone:number, address:string, password:string){
     const storeUser = await sql`
     insert into users (f_name, l_name, email, phone, address, password)
     values (${fName}, ${lName}, ${email}, ${phone}, ${address}, ${password})
@@ -9,7 +9,7 @@ export async function storeUser(fName:any, lName:any, email:any, phone:any, addr
     `
     return storeUser
 }
-export async function getUserbyEmail(email:any) {
+export async function getUserbyEmail(email:string) {
   const user = await sql`
     select * from users
     where email = ${email}

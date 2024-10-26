@@ -5,7 +5,7 @@ import { login } from "@/lib/auth"
 
 export default function Login(){
     
-    const [formState, formAction] = useActionState<any, FormData>(login, {})
+    const [formState, formAction] = useActionState(login, {})
     return (
         <>       
 
